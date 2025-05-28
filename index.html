@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Task Tracker</title>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨Task Tracker</h1>
+            <p>Stay organized and productive</p>
+        </div>
+
+        <div class="task-form">
+            <div class="form-group">
+                <input type="text" id="taskInput" class="task-input" placeholder="What needs to be done?" maxlength="200">
+                <select id="prioritySelect" class="priority-select">
+                    <option value="low">Low Priority</option>
+                    <option value="medium" selected>Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button onclick="addTask()" class="add-btn">Add Task</button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterTasks('all')">All Tasks</button>
+            <button class="filter-btn" onclick="filterTasks('pending')">Pending</button>
+            <button class="filter-btn" onclick="filterTasks('completed')">Completed</button>
+            <button class="filter-btn" onclick="filterTasks('high')">High Priority</button>
+        </div>
+
+        <div class="tasks-container">
+            <div class="task-stats">
+                <h3>📊 Task Overview</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalTasks">0</span>
+                        <span>Total</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="pendingTasks">0</span>
+                        <span>Pending</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="completedTasks">0</span>
+                        <span>Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="progressPercent">0%</span>
+                        <span>Progress</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tasksList">
+                <div class="empty-state">
+                    <div class="empty-icon">📝</div>
+                    <h3>No tasks yet!</h3>
+                    <p>Add your first task above to get started.</p>
+                </div>
+            </div>
+        </div>
+    </div>
