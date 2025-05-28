@@ -148,11 +148,14 @@ let tasks = [];
         }
 
         // Allow Enter key to add tasks
-        document.getElementById('taskInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                addTask();
-            }
-        });
+         document.addEventListener('DOMContentLoaded', function() {
+            // Allow Enter key to add tasks
+            document.getElementById('taskInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    addTask();
+                }
+            });
 
         // Initialize
         updateStats();
+         });
