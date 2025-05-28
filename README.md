@@ -2,8 +2,12 @@
 A beautiful, modern web based task management application with an intuitive interface. Stay organised and boost your productivity with this feature rich task tracker.
 
 
-![Task Tracker 1](https://github.com/user-attachments/assets/90782876-622f-4a23-9d0d-05bf7f8ba973) ![Task Tracker 2](https://github.com/user-attachments/assets/df1b19ec-75cb-435b-8177-ffb2e222e81f)
+![Task Tracker 1](https://github.com/user-attachments/assets/67cf8499-d29b-42aa-8210-23812d0fe9ae) ![Task Tracker 2](https://github.com/user-attachments/assets/df1b19ec-75cb-435b-8177-ffb2e222e81f)
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c4dcd8bc-922a-43b4-b123-18bd892184f6/deploy-status)](https://app.netlify.com/projects/nexustasks/deploys)
+
+[Nexus Task Tracker](https://nexustasks.netlify.app/)
 ## 🚀 Features
 ### Core Functionality
 
